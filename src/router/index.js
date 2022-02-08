@@ -11,24 +11,25 @@ const routes = [
         title:'首页'
     },
     children: [
-      {
-        name: "welcome",
-        path: "/welcome",
-        meta: {
-          title: "欢迎页面",
-        },
-        component: ()=> import('../views/Welcome.vue'),
-      },
-      {
-        name: "login",
-        path: "/login",
-        meta: {
-          title: "登录",
-        },
-        component:  ()=> import('../views/Login.vue'),
-      },
+    
     ],
   },
+  {
+    name: "welcome",
+    path: "/welcome",
+    meta: {
+      title: "欢迎页面",
+    },
+    component: ()=> import('../views/Welcome.vue'),
+  },
+  {
+    name: "login",
+    path: "/login",
+    meta: {
+      title: "登录",
+    },
+    component:  ()=> import('../views/Login.vue'),
+  }
 ];
 
 
