@@ -4,6 +4,9 @@
   <div>登录用户 : {{ name || '未登录' }}  <a-button type="primary" @click="login">登录</a-button> <a-button type="error" @click="logout">登出</a-button></div>
   <div>用户角色 : {{ isAdmin?'管理员':'普通用户' }}</div>
   <router-link to="/">跳转到首页页面</router-link>
+  <div class="test-scroll">
+    测试滚动条
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent, onMounted, ref } from "vue";
@@ -38,3 +41,11 @@ export default defineComponent({
   },
 });
 </script>
+<style lang="less" scoped>
+.test-scroll{
+  height: 160vh;
+  width: 100%;
+  border: #123321 solid 1px;
+  text-align: center;
+}
+</style>
