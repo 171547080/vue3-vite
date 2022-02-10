@@ -36,7 +36,14 @@ export default defineConfig({
     // 设置origin
     origin: "http://127.0.0.1:8080/",
   },
-
+  css: {
+    // css预处理器
+    preprocessorOptions: {
+      less: {
+        charset: false
+      },
+    },
+  },
   build: {
     // 打包路径
     outDir: "dist",
